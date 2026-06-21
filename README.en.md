@@ -8,7 +8,7 @@
 
 The core processor of the cartridge is an Altera/Intel MAX CPLD chip housed in a **TQFP-100** package.
 
-*Important Note:* This repository is based on the official RBSC/ZX-EQ project documentation. All enhancements, structural modifications, and edge-connector changes have been executed with strict respect to the original authors.
+*Important Note:* This repository is based on the official [RBSC/ZX-EQ](https://github.com/RBSC/ZX-EQ) project documentation. All enhancements, structural modifications, and edge-connector changes have been executed with strict respect to the original authors.
 
 ***
 
@@ -41,10 +41,10 @@ Depending on which CPLD chip family you choose to solder, you must adjust the on
 
 Thanks to the universal power distribution layout, this project natively supports firmware code targeting different Altera/Intel CPLD generations. 
 
-This repository includes custom modifications and provides full, seamless integration with the **alternative firmware repository by andykarpov (zx-eq-firmware)**. This third-party code branch vastly broadens the choice of compatible LED bar components and pin polarities.
+This repository includes custom modifications and provides full, seamless integration with the **alternative firmware repository by [andykarpov/zx-eq-firmware](https://github.com/andykarpov/zx-eq-firmware)**. This third-party code branch vastly broadens the choice of compatible LED bar components and pin polarities.
 
 ### Available Firmware Binaries
-Please browse the [/Firmware](https://github.com/Alex-2-Graf/ZX-EQ) folder of this repository. Select the specific `.pof`/`.jed` file that exactly matches your soldered CPLD model, your specific LED segment bar configuration, and desired polarity.
+Please browse the [/Firmware](Firmware) folder of this repository. Select the specific `.pof`/`.jed` file that exactly matches your soldered CPLD model, your specific LED segment bar configuration, and desired polarity.
 
 ### JTAG Programming Steps
 1. Connect an **Altera USB Blaster** (or equivalent hardware programmer) to the onboard 10-pin JTAG header.
@@ -55,7 +55,7 @@ Please browse the [/Firmware](https://github.com/Alex-2-Graf/ZX-EQ) folder of th
 
 ## 🎨 Hardware Gallery & PCB Renders
 
-Visual project documentation, high-definition photographs of assembled devices, and 3D PCB renders can be found inside the [/Foto](https://github.com/Alex-2-Graf/ZX-EQ) directory.
+Visual project documentation, high-definition photographs of assembled devices, and 3D PCB renders can be found inside the [/Foto](Foto) directory.
 
 ---
 
