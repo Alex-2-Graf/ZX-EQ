@@ -1,6 +1,8 @@
 # ZX-EQ Nemo-bus Edition (Universal CPLD)  
 Spectrolyzer Cartridge for ZX Spectrum  
   
+> [English](README.en.md) | [Русский](README.md)  
+  
 ![](Foto/ZX-EQ_1.jpg)  
   
 ---
