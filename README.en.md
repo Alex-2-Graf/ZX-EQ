@@ -15,14 +15,12 @@ The core processor of the cartridge is an Altera/Intel MAX CPLD chip housed in a
 ## Key Hardware Upgrades
 
 1. **Nemo-bus Form Factor:** The printed circuit board is designed to plug directly into the standard Nemo-bus expansion slots found on modern clones and upgraded vintage motherboards (such as the ZX-Evolution, Scorpion ZS-256, Kay, and ZXM-Phoenix).
-2. **Multi-CPLD Architecture:** The PCB power distribution lines and logic paths have been redesigned to be multi-voltage tolerant. This allows you to choose between two different generations of Altera/Intel CPLD chips in the TQFP-100 package:
+2. **Multi-CPLD:** The board is designed for universal power supply and logic level tolerance. Two types of FPGA chips in TQFP-100 packages are supported:
     *   **Altera MAX 7000S:** EPM7128STC100 / EPM7160STC100.
 
 ***
 
 ## CPLD Firmware Programming
-
-Thanks to the universal power distribution layout, this project natively supports firmware code targeting different Altera/Intel CPLD generations. 
 
 This repository includes custom modifications and provides full, seamless integration with the **alternative firmware repository by [andykarpov/zx-eq-firmware](https://github.com/andykarpov/zx-eq-firmware)**. This third-party code branch vastly broadens the choice of compatible LED bar components and pin polarities.
 
