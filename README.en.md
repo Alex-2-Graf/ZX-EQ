@@ -16,24 +16,7 @@ The core processor of the cartridge is an Altera/Intel MAX CPLD chip housed in a
 
 1. **Nemo-bus Form Factor:** The printed circuit board is designed to plug directly into the standard Nemo-bus expansion slots found on modern clones and upgraded vintage motherboards (such as the ZX-Evolution, Scorpion ZS-256, Kay, and ZXM-Phoenix).
 2. **Multi-CPLD Architecture:** The PCB power distribution lines and logic paths have been redesigned to be multi-voltage tolerant. This allows you to choose between two different generations of Altera/Intel CPLD chips in the TQFP-100 package:
-    *   **Altera MAX 7000S:** EPM7128STC100 / EPM7160STC100 (Native +5V core logic).
-    *   **Altera MAX 3000A:** EPM3128ATC100 (+3.3V core logic, featuring 5V-tolerant input pins perfectly safe for the Nemo-bus lines).
-
-***
-
-## Bill of Materials (BOM) & Jumper Configuration
-
-Depending on which CPLD chip family you choose to solder, you must adjust the onboard power circuitry configuration:
-
-### Option A: Using the EPM3128ATC100 (+3.3V CPLD)
-*   **Voltage Regulator:** You **MUST** solder a 3.3V LDO regulator chip (such as the LT1117-3.3) onto the board to feed the low-voltage CPLD core.
-*   **Power Jumper (JP1):** Must be left completely **OPEN** (un-soldered).
-*   **Firmware:** Use a `.pof` or `.jed` binary compiled specifically for the MAX3000A family.
-
-### Option B: Using the EPM7128STC100 / EPM7160STC100 (+5V CPLD)
-*   **Voltage Regulator:** Not required. You can safely skip soldering the LDO regulator along with its input/output filter capacitors `C3` and `C4`.
-*   **Power Jumper (JP1):** Must be **SHORTED** (soldered closed) to route raw 5V power straight to the CPLD power pins.
-*   **Firmware:** Flash the original RBSC `.pof` binary compiled for the MAX7000S family.
+    *   **Altera MAX 7000S:** EPM7128STC100 / EPM7160STC100.
 
 ***
 
