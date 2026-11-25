@@ -28,11 +28,14 @@ Spectrolyzer Cartridge for ZX Spectrum
   
 ## Прошивка ПЛИС (Firmware)
     
-В данном репозитории учтены наработки оригинального проекта и кастомные модификации. В частности, добавлена полноценная интеграция с **альтернативной прошивкой от [andykarpov/zx-eq-firmware](https://github.com/andykarpov/zx-eq-firmware)**, которая значительно расширяет выбор используемых светодиодных индикаторов.  
+В данном репозитории учтены наработки оригинального проекта и кастомные модификации. В частности, добавлена полноценная интеграция с **альтернативной прошивкой от [andykarpov/zx-eq-firmware](https://github.com/andykarpov/zx-eq-firmware) и [AlexZor](https://github.com/Alex-Zor)**, которые значительно расширяет выбор используемых светодиодных индикаторов.  
   
 ### Доступные бинарники в папке [Firmware](Firmware):  
   
 В зависимости от запаянного чипа и типа ваших LED-столбиков, выберите нужный файл.  
+
+Для EPM7160 рекомендуется [ZX_EQ7160](Firmware/ZX_EQ7160.pof)
+А для EPM7128 [ZX_EQ7128](Firmware/ZX_EQ7128.pof)
   
 ---
   
@@ -58,6 +61,7 @@ Spectrolyzer Cartridge for ZX Spectrum
 ## Благодарности (Credits)
 * **[RBSC (Retro-Computers Breeding Society)](https://github.com)** — авторы оригинальной схемы, логики спектроанализатора и концепта картриджа.
 * **[Андрей Карпов (andykarpov)](https://github.com/andykarpov/zx-eq-firmware)** — автор альтернативной прошивки с поддержкой 8-битных шкал и выбора полярности LED.
+* **[AlexZor](https://github.com/Alex-Zor)** - автор прошивки для EPM7128STC100.
   
 ---
   
